@@ -9,34 +9,53 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300;1,400&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Title</title>
+
+    <script src="scripts/myscript.js"></script>
 </head>
-<body>
-<script src="scripts/myscript.js"></script>
+<body onload="hideAll_onload()">
 <div id="head_box">
     <div  id="title"><h1 class="focus-in-expand-fwd">TAMAR GILADI</h1></div>
-    <div id="info"><h4 ><a href="mailto:name@email.com">tmrgldy@gmail.com</a></h4></div>
-    <div onclick="animate()"  class="menu_item" id="about-me"><p class="">About Me</p></div>
-    <div onclick="animate()" class="menu_item " id="menu_skills"><p>Skills</p></div>
-    <div class="menu_item" ><p>Contact</p></div>
+    <div id="info"><h4 >Front End Developer</h4></div>
+    <div class="menu_item"  onclick="openDiv(1)" id="about-me"><p class="">About Me</p></div>
+    <div  class="menu_item " onclick="openDiv(2)" id="menu_skills"><p>Skills</p></div>
+    <div  class="menu_item" onclick="openDiv(3)" ><p>Contact</p></div>
+</div>
+<div id="main_skills_box">
+<div class="skills_box">
+        <img  class="swing-in-top-fwd_1" src="https://www.bryntum.com/wp-content/uploads/2020/02/js-logo.png"/>
+        <img  class="swing-in-top-fwd_2" src="https://lh3.googleusercontent.com/proxy/0rk1LCLAbPWOTotzAQNO75dTJOV9xrcR2BT1e9JeQF4mhKXOhr-2CsA0g7OlfvuWl4Ko2HGxwTN84YRZ23urow0LwNYZGXT8"/>
+        <img class="swing-in-top-fwd_3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1024px-Python-logo-notext.svg.png"/>
+        <img class="swing-in-top-fwd_4" src="https://avatars.githubusercontent.com/u/874086?s=400&v=4"/>
+        <img class="swing-in-top-fwd_5" src="https://cdn.iconscout.com/icon/free/png-256/c-programming-569564.png" />
 </div>
 <div class="skills_box">
-        <img  src="https://www.bryntum.com/wp-content/uploads/2020/02/js-logo.png"/>
-        <img  src="https://lh3.googleusercontent.com/proxy/0rk1LCLAbPWOTotzAQNO75dTJOV9xrcR2BT1e9JeQF4mhKXOhr-2CsA0g7OlfvuWl4Ko2HGxwTN84YRZ23urow0LwNYZGXT8"/>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1024px-Python-logo-notext.svg.png"/>
-        <img src="https://avatars.githubusercontent.com/u/874086?s=400&v=4"/>
-        <img src="https://cdn.iconscout.com/icon/free/png-256/c-programming-569564.png" />
+    <img  class="swing-in-top-fwd_6" src="https://cdn.worldvectorlogo.com/logos/c.svg"/>
+    <img class="swing-in-top-fwd_7" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/CSS.3.svg/1200px-CSS.3.svg.png" />
 
 </div>
-<div class="skills_box">
-    <img  src="https://cdn.worldvectorlogo.com/logos/c.svg"/>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/CSS.3.svg/1200px-CSS.3.svg.png" />
-
-
-
 </div>
+<div class="body_box swing-in-top-bck" id="about_me_box">
+    <div class="background_box_center">
+        <h2>d</h2>
+        <h3>Computer Science Student</h3>
+        <span style="width:100%;"></span>
+    </div>
+</div>
+
+<div class="body_box swing-in-top-bck " id="contact_box">
+    <div class="background_box_center">
+     <h3>0508643610</h3>
+        <h3>tmrgldy@gmail.com</h3>
+    </div>
+</div>
+
+
+
 
 </body>
 </html>
