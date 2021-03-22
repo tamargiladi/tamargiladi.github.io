@@ -254,9 +254,9 @@
 }
 :root {
     --main: #fda50f;
-    --second: #003d33;
+    --dark: #003d33;
     --third:#ffc30b;
-    --background: #006d5b;
+    --background: black;
 }
 
 body
@@ -352,8 +352,8 @@ a{
     justify-content: center;
     align-content: center;
     padding:20px;
-    text-decoration: underline;
-    text-decoration-color: #f57828;
+    color:white;
+
 
 }
 
@@ -392,7 +392,7 @@ a{
     display: grid;
     justify-content: center;
     align-content: center;
-    background-color: var(--second);
+    background-color: var(--dark);
     width:80%;
 }
 .background_box_center
@@ -400,7 +400,7 @@ a{
     display: inline-grid;
     place-self:center;
     text-align: center;
-    background-color: var(--second);
+    background-color: var(--dark);
     padding:10px;
     width:80%;
 }
