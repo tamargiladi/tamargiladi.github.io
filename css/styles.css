@@ -253,15 +253,23 @@
     animation: vibrate-1 0.3s linear infinite both;
 }
 :root {
-    --main: #fda50f;
-    --dark: #003d33;
-    --third:#ffc30b;
-    --background: black;
+    --main: #29bb89;
+    --dark: #03506f;
+    --third: #d94316;
+    --background:black;
+
+
+    --img_size:150px;
+    --img_size_larger:167px;
 }
 
+
+@media only screen and(min-width:400px)
+{}
 body
 {
     margin:0px;
+    margin-top:30px;
     background-color: var(--background);
     color:white;
     font-family: 'Krub', sans-serif;
@@ -296,12 +304,13 @@ h1
 
 #title
 {
+    margin-top:30px;
+    position: relative;
     grid-column: 1/5;
-    padding-left:30px;
     display:grid;
     justify-content: center;
-    align-content: end;
     background-color: var(--background);;
+    width:100%;
 
 }
 
@@ -317,12 +326,6 @@ h1
 
 }
 
-#info h4
-{
-    display: flex;
-    justify-content: center;
-
-}
 
 #title:hover{
     animation:bounce;
@@ -343,9 +346,14 @@ h1
     color:white;
 }
 
+
 a{
     color:var(--main);
 }
+
+
+
+
 .menu_item p
 {
     display:grid;
@@ -360,8 +368,6 @@ a{
 .menu_item p:hover
 {
     background-color: var(--third) !important;
-
-
 }
 
 .skills_box
@@ -374,9 +380,11 @@ a{
 .skills_box img
 {
     margin:10px;
-    width:200px;
-    height:200px;
+    width:var(--img_size);
+    height:var(--img_size);
 }
+
+
 
 .body_box
 {
@@ -386,6 +394,20 @@ a{
 
 }
 
+
+#contact_box a
+{
+    background-color: var(--main); !important;
+    color:white;
+    text-decoration: none;
+
+}
+#contact_box a:hover
+{
+   font-size:104%;
+    padding:4px;
+
+}
 
 
 .background_box_center
@@ -397,18 +419,59 @@ a{
     padding:10px;
     width:80%;
 }
+
+#about_me_box
+{
+    display:flex;
+    justify-content: center;
+
+}
+
+#about_me_box_inside
+{
+    width:80%;
+    height:380px;
+
+}
+
+#about_me_box img
+{
+    height:400px;
+}
+
 #about_me_box_inside h3
 {
-    padding-left:80px;
+    margin-left:80px;
     place-self: start;
 }
 
+
+#about_me_box p
+{
+    margin-top: -20px;
+    margin-left:80px;
+    text-align: left;
+
+}
+
+#about_me_box p:hover
+{
+    transition-property: font-size;
+    transition-timing-function: ease-in;
+    font-size:105%;
+
+}
 .background_box_center h2
 {
     padding-left:40px;
     place-self:start;
     color:var(--third);
 }
+
+.background_box_center p {
+    padding-right:80px;
+}
+
 
 .img_box
 {
@@ -427,47 +490,231 @@ a{
    width:20px;
     height:20px;
 }
-.flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 200px;
-    border: 1px solid #f1f1f1;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+
+.projects_box_inside
+{
+    display:flex;
+    flex-direction: column;
+
+
 }
 
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
+
+.projects_box_inside h2
+{
+    color:var(--main);
+
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
+
+@keyframes example {
+   0%
+   {
+        margin-left:-130px;
+   }
+
+    50%
+    {
+        background-size: 50px;
+
+    }
+    100%
+    {
+
+
+    }
 }
 
-/* Position the front and back side */
-.flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
+#mini_tamar_animation
+{
+
+    animation-delay: 1s;
+    background-color: #d94316;;
+    animation:example;
+    animation-duration: 3s;
+
 }
 
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-    background-color: #bbb;
-    color: black;
+.robot_img
+{
+    width:400px;
+    padding-left:10px;
+    margin-top:-70px;
+
 }
 
-/* Style the back side */
-.flip-card-back {
-    background-color: dodgerblue;
-    color: white;
-    transform: rotateY(180deg);
+#block1
+{
+    display:flex;
+    flex-direction: column;
+    background-color: #03506f;
+
+
+}
+
+#block2
+{
+    display:flex;
+
+}
+
+#block2 .projects_block_inside
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#block2 .projects_block_inside h2
+{
+
+    justify-content: flex-start;
+}
+
+#block2A
+{
+    background-color: #023e57;
+
+}
+
+#block2B
+{
+    width:500px;
+}
+
+#block3
+{
+    background-color: var(--dark);
+
+}
+
+
+.projects_block h2
+{
+    padding-left:30px;
+}
+
+.projects_block p
+{
+    padding-left:30px;
+}
+
+.projects_block_inside
+{
+    display:flex;
+    justify-content: space-between;
+}
+
+.seperator_vert
+{
+    height:200px;
+    width:10px;
+    background-color:white;
+}
+
+.seperator_hori
+{
+    padding:0px;
+    height:5px;
+    width:100%;
+    background-color:white;
+}
+
+/*Animations*/
+
+
+.slide-in-left {
+    -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2021-3-30 9:57:33
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info.
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-left
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-left {
+    0% {
+        -webkit-transform: translateX(-1000px);
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-in-left {
+    0% {
+        -webkit-transform: translateX(-1000px);
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-bottom {
+    -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2021-3-30 9:59:27
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info.
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-in-bottom
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-bottom {
+    0% {
+        -webkit-transform: translateY(1000px);
+        transform: translateY(1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-in-bottom {
+    0% {
+        -webkit-transform: translateY(1000px);
+        transform: translateY(1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#block1
+{
+    animation: slide-in-left;
+    animation-duration: 1s;
+
+}
+
+#block2A
+{
+    animation-delay:1s;
+    animation: slide-in-bottom;
+    animation-duration: 1s;
 }

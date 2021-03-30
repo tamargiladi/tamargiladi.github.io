@@ -3,15 +3,18 @@
 <head>
     <title>TAMAR GILADI | DEVELOPER</title>
     <link
-            rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+            rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="icon" href="images/logo2.jpeg">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
     <!--fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;800&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300;1,400&display=swap"
+          rel="stylesheet">
     <meta charset="UTF-8">
     <title>Title</title>
 
@@ -19,56 +22,111 @@
 </head>
 <body onload="hideAll_onload()">
 <div id="head_box">
-    <div  id="title"><h1 class="focus-in-expand-fwd">TAMAR GILADI</h1></div>
-    <div id="info"><h4 style="background-color:var(--dark);padding:5px;">Front End Developer</h4></div>
-    <div class="menu_item scale-down-center"  onclick="openDiv(1)" id="about-me"><p id="p_about_me" class="">About Me</p></div>
-    <div  class="menu_item scale-down-center" onclick="openDiv(2)" id="menu_skills"><p id="p_skills" class="">Skills</p></div>
-    <div  class="menu_item scale-down-center" onclick="openDiv(3)" ><p id="p_contact" >Contact</p></div>
-    <div  class="menu_item scale-down-center" onclick="openDiv(4)" ><p id="p_projects">Projects</p></div>
-
+    <div id="title"><!--<h1 class="focus-in-expand-fwd">TAMAR GILADI</h1>-->
+        <img style="width:200px;" src="images/logo2.jpeg"/>
+    </div>
+    <div id="info"><h4 style="background-color:var(--dark);padding:5px;"> Front End Developer | Backend Developer </h4></div>
+    <div class="menu_item scale-down-center" id="about-me" onclick="openDiv(1)"><p class="" id="p_about_me">About Me</p>
+    </div>
+    <div class="menu_item scale-down-center" id="menu_skills" onclick="openDiv(2)"><p class="" id="p_skills">Skills</p>
+    </div>
+    <div class="menu_item scale-down-center" onclick="openDiv(3)"><p id="p_contact">Contact</p></div>
+    <div class="menu_item scale-down-center" onclick="openDiv(4)"><p id="p_projects">Projects</p></div>
 </div>
+
+
+<!--============================
+SKILLS BOX
+=================================-->
 <div id="main_skills_box">
-<div class="skills_box ">
-        <img  class="scale-up-center swing-in-top-fwd_1 " src="https://www.bryntum.com/wp-content/uploads/2020/02/js-logo.png"/>
-        <img  class="swing-in-top-fwd_2 " src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png"/>
-        <img class="swing-in-top-fwd_3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/CSS.3.svg/1200px-CSS.3.svg.png"/>
+    <div class="skills_box ">
+        <img id="skill_img_1" onmouseover="changeImg(this)" onmouseout="changeImgBack(this)" class="scale-up-center swing-in-top-fwd_1 "
+             src="https://www.bryntum.com/wp-content/uploads/2020/02/js-logo.png"/>
+        <img class="swing-in-top-fwd_2 "
+             src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png"/>
+        <img class="swing-in-top-fwd_3"
+             src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/CSS.3.svg/1200px-CSS.3.svg.png"/>
         <img class="swing-in-top-fwd_4" src="https://cdn.worldvectorlogo.com/logos/c.svg"/>
-        <img class="swing-in-top-fwd_5" src="https://cdn.iconscout.com/icon/free/png-256/c-programming-569564.png" />
-</div>
-<div class="skills_box">
-    <img  class="swing-in-top-fwd_6" src="https://avatars.githubusercontent.com/u/874086?s=400&v=4"/>
-    <img class="swing-in-top-fwd_7" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1024px-Python-logo-notext.svg.png" />
-    <img class="swing-in-top-fwd_7" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/240px-Angular_full_color_logo.svg.png
-" />
+        <img class="swing-in-top-fwd_5" src="https://cdn.iconscout.com/icon/free/png-256/c-programming-569564.png"/>
+    </div>
+    <div class="skills_box">
+        <img class="swing-in-top-fwd_6" src="https://avatars.githubusercontent.com/u/874086?s=400&v=4"/>
+        <img class="swing-in-top-fwd_7"
+             src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1024px-Python-logo-notext.svg.png"/>
+        <img class="swing-in-top-fwd_7" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/240px-Angular_full_color_logo.svg.png
+"/>
 
-</div>
+    </div>
 </div>
 
-<div class="body_box slide-in-left" id="about_me_box">
+<div style="display:none;" class="body_box slide-in-left" id="about_me_box">
     <div class="background_box_center" id="about_me_box_inside">
-        <h2>Hi   (-:</h2>
-        <h3>My name is Tamar Giladi, and I am a Computer Science Student</h3>
+        <h2>Hi (-:</h2>
+        <h3>My name is <span id="mini_tamar_animation" >Tamar Giladi</span>, and I am a Computer Science Student.</h3>
+        <p>The Moon is a barren, rocky world without air and water. It has dark lava plain on its surface.
+            The Moon is filled wit craters. It has no light of its own. It gets its light from the Sun. The Moo keeps
+            changing its shape as it moves round the Earth. It spins on its axis in 27.3 days stars were named after
+            the Edwin Aldrin were the first ones to set their foot on the Moon on 21 July 1969 They reached the Moon
+
+            in their space craft named Apollo II.</p>
         <span style="width:100%;"></span>
     </div>
+    <img src="images/profile_img.JPG"/>
 </div>
 
-<div class="body_box slide-in-left" id="contact_box">
+<div style="display:none;" class="body_box slide-in-left" id="contact_box">
     <div class="background_box_center">
         <h3>050<span style="color:var(--main);">8643610</span></h3>
-        <h3><span style="color:var(--main);">tmrgldy</span>@gmail.com</h3>
+        <h3><span style="color:var(--main);">tamargi98</span>@gmail.com</h3>
+        <h3><span style="color:var(--main);">LinkedIn        </span><span  style="background-color: #29bb89;padding-left:7px;padding-right:7px;margin-left:3px;"><a target="_blank" href="https://www.linkedin.com/in/tamar-giladi98">Tamar Giladi</a></span></h3>
+        <h3><span style="color:var(--main);">Instagram       </span>@tamar_giladi1</h3>
+        <h3><span style="color:var(--main);">Facebook        </span><span style="background-color: #29bb89;padding-left:7px;padding-right:7px;margin-left:3px;">Tamar Giladi</span></h3>
+
     </div>
 </div>
 
-<div class="body_box slide-in-left" id="projects_box">
-    <div class="background_box_center">
-    <h3>050<span style="color:var(--main);">8643610</span></h3>
-    <h3><span style="color:var(--main);">tmrgldy</span>@gmail.com</h3>
+<div style="display:none;" class="body_box slide-in-left" id="projects_box">
+    <div class="projects_box_inside">
+        <div class="projects_block" id="block1">
+            <div style="display:block;">
+            <h2>Watering System - Arduino</h2>
+            <div class="projects_block_inside" >
+                <p>With this robot it's possible to <STRONG>water the garden automatically</STRONG>. The watering is
+                    influenced by weather and temperature conditions. The robot is from <italic>Arudino</italic> type. And the programming language that was used is C.
+                </p>
+                <img class="robot_img" src="images/robotics/robot_img.jpg"/>
+            </div>
+        </div>
+        <div class="seperator_hori"></div>
+
+    </div>
+    <div class="projects_block" id="block2">
+        <div id="block2A">
+            <h2>To Do App</h2>
+            <div class="projects_block_inside">
+                <p>With this robot it's possible to <STRONG>water the garden automatically</STRONG>. The watering is
+                    influenced by weather and temperature conditions. The robot is from <italic>Arudino</italic> type. And the programming language that was used is C.
+                </p>
+            </div>
+        </div>
+        <div class="seperator_vert"></div>
+        <div id="block2B">
+            <h2>Watering System - Arduino</h2>
+            <div class="projects_block_inside">
+                <p class="codepen" data-theme-id="dark" data-default-tab="result" data-user="tmrgldy" data-slug-hash="JjbMxPz" style="height: 564px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="tmrClock">
+  <span>See the Pen <a href="https://codepen.io/tmrgldy/pen/JjbMxPz">
+  tmrClock</a> by tmrgldy (<a href="https://codepen.io/tmrgldy">@tmrgldy</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+            </div>
+        </div>
     </div>
 </div>
-
-
+</div>
 
 
 </body>
+<h1 id="device_type"></h1>
 <span style="padding-top:30px;width:100%;display:flex;justify-content: center;color: #2f2f2f;">tmrgldy©</span>
 </html>

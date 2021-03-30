@@ -52,3 +52,22 @@ function openDiv(div)
     }
 
 }
+
+var width = document.body.style.width;
+
+if(width>150)
+{
+    document.getElementById("device_type").innerHTML="iphone";
+}
+else
+    document.getElementById("device_type").innerHTML="Not an iPhone";
+
+
+function changeImg(x) {
+   x.style.marginRight="300px";
+}
+
+function changeImgBack(x)
+{
+    x.style.marginRight="150px";
+}
