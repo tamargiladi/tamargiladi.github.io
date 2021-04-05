@@ -537,11 +537,13 @@ a{
 
 .robot_img
 {
-    width:400px;
+    height:200px;
     padding-left:10px;
     margin-top:-70px;
 
+
 }
+
 
 #block1
 {
@@ -573,12 +575,12 @@ a{
 #block2A
 {
     background-color: #023e57;
+    width:60%;
 
 }
 
 #block2B
 {
-    width:500px;
 }
 
 #block3
