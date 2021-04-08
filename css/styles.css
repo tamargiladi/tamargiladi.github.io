@@ -454,11 +454,7 @@ a{
     display: block;
 }
 
-#about_me_box_inside
-{
-    height:380px;
 
-}
 
 
 #link_img
@@ -467,18 +463,21 @@ a{
 }
 
 
-@media screen and (max-width : 390px)
-{
-    #about_me_box_inside p
-    {
-        font-size:100px;
-    }
-}
-@media screen and (max-width : 1204px)
+@media screen and (min-width : 800px)
 {
     #about_me_box_inside p
     {
         font-size:100%;
+        height:250px;
+    }
+}
+@media screen and (max-width : 799px)
+{
+    #about_me_box_inside p
+    {
+        max-height:600px;
+        font-size: 100%;
+
     }
 }
 
