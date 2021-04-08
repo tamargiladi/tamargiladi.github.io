@@ -501,7 +501,7 @@ a{
 
 #clock_img
 {
-  width:100%;
+width:100%;
 }
 
 
@@ -646,14 +646,14 @@ a{
 #block2A
 {
     background-color: #023e57;
-    width:70%;
+    width:60%;
 
 
 }
 
 #block2B
 {
-    width:30%;
+    width:40%;
 }
 
 #block3
@@ -666,7 +666,8 @@ a{
 {
     margin-left:20px;
     margin-bottom: 20px;
-    width:60%;
+    min-width:100px;
+    max-width:60%;
 }
 
 .projects_block h2
@@ -688,7 +689,6 @@ a{
 
 .seperator_vert
 {
-    height:420.7px;
     width:10px;
     background-color:white;
 }
