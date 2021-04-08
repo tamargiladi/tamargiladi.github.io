@@ -20,6 +20,14 @@
 
     <script src="scripts/myscript.js"></script>
 </head>
+
+<!--
+==============================
+    MENU_BOX
+==============================
+-->
+
+<!-- TODO: Change the name of the div from 'head_box' to 'menu_box' -->
 <body onload="hideAll_onload()">
 <div id="head_box">
     <div id="title"><!--<h1 class="focus-in-expand-fwd">TAMAR GILADI</h1>-->
@@ -28,7 +36,8 @@
     <div id="info"><h4 style="background-color:var(--dark);padding:5px;"> Front End Developer | Backend Developer </h4></div>
     <div class="menu_item scale-down-center" id="about-me" onclick=window.open("about_me.html",'_self')><p class="" id="p_about_me">About Me</p>
     </div>
-    <div class="menu_item scale-down-center" id="menu_skills" onclick=window.open("index.html",'_self') ><p class="" id="p_skills">Skills</p>
+    <div class="menu_item scale-down-center" id="menu_skills" onclick=window.open("index.html",'_self') >
+        <p style="background-color: var(--third);" id="p_skills">Skills</p>
     </div>
     <div class="menu_item scale-down-center"  onclick=window.open("contact.html",'_self') ><p id="p_contact">Contact</p></div>
     <div class="menu_item scale-down-center" onclick=window.open("projects.html",'_self') ><p id="p_projects">Projects</p></div>
@@ -38,6 +47,10 @@
 <!--============================
 SKILLS BOX
 =================================-->
+<!--
+TODO: - Add more skiils
+          -
+ -->
 <div id="main_skills_box">
     <div class="skills_box ">
         <img id="skill_img_1" onmouseover="changeImg(this)" onmouseout="changeImgBack(this)" class="scale-up-center swing-in-top-fwd_1 "
@@ -50,6 +63,7 @@ SKILLS BOX
         <img class="swing-in-top-fwd_5" src="https://cdn.iconscout.com/icon/free/png-256/c-programming-569564.png"/>
     </div>
     <div class="skills_box">
+        <img style="width:80px;" class="swing-in-top-fwd_6" src="images/kisspng-java-logo-programming-language-java-plum-5ac7bef24d5452.5438873115230399863168.png"/>
         <img class="swing-in-top-fwd_6" src="https://avatars.githubusercontent.com/u/874086?s=400&v=4"/>
         <img class="swing-in-top-fwd_7"
              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1024px-Python-logo-notext.svg.png"/>
@@ -89,34 +103,34 @@ SKILLS BOX
     <div class="projects_box_inside">
         <div class="projects_block" id="block1">
             <div style="display:block;">
-            <h2>Watering System - Arduino</h2>
-            <div class="projects_block_inside" >
-                <p>With this robot it's possible to <STRONG>water the garden automatically</STRONG>. The watering is
-                    influenced by weather and temperature conditions. The robot is from <italic>Arudino</italic> type. And the programming language that was used is C.
-                </p>
-                <img class="robot_img" src="images/robotics/robot_img.jpg"/>
+                <h2>Watering System - Arduino</h2>
+                <div class="projects_block_inside" >
+                    <p>With this robot it's possible to <STRONG>water the garden automatically</STRONG>. The watering is
+                        influenced by weather and temperature conditions. The robot is from <italic>Arudino</italic> type. And the programming language that was used is C.
+                    </p>
+                    <img class="robot_img" src="images/robotics/robot_img.jpg"/>
+                </div>
             </div>
-        </div>
-        <div class="seperator_hori"></div>
+            <div class="seperator_hori"></div>
 
-    </div>
-    <div class="projects_block" id="block2">
-        <div id="block2A">
-            <h2>To Do App</h2>
-            <div class="projects_block_inside">
-                <p>With this robot it's possible to <STRONG>water the garden automatically</STRONG>. The watering is
-                    influenced by weather and temperature conditions. The robot is from <italic>Arudino</italic> type. And the programming language that was used is C.
-                </p>
-            </div>
         </div>
-        <div class="seperator_vert"></div>
-        <div id="block2B">
-            <h2>JavaScript Clock</h2>
-            <div class="projects_block_inside">
+        <div class="projects_block" id="block2">
+            <div id="block2A">
+                <h2>To Do App</h2>
+                <div class="projects_block_inside">
+                    <p>With this robot it's possible to <STRONG>water the garden automatically</STRONG>. The watering is
+                        influenced by weather and temperature conditions. The robot is from <italic>Arudino</italic> type. And the programming language that was used is C.
+                    </p>
+                </div>
+            </div>
+            <div class="seperator_vert"></div>
+            <div id="block2B">
+                <h2>JavaScript Clock</h2>
+                <div class="projects_block_inside">
 
+                </div>
             </div>
         </div>
-    </div>
         <div class="seperator_hori"></div>
     </div>
 </div>

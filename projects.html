@@ -21,6 +21,12 @@
     <script src="scripts/about_me.js"></script>
 </head>
 <body onload="hideAll_onload()">
+
+<!--
+==============================
+    HEAD_BOX
+==============================
+-->
 <div id="head_box">
     <div id="title"><!--<h1 class="focus-in-expand-fwd">TAMAR GILADI</h1>-->
         <img style="width:200px;" src="images/logo2.jpeg"/>
@@ -31,63 +37,15 @@
     <div class="menu_item scale-down-center" id="menu_skills" onclick=window.open("index.html",'_self') ><p class="" id="p_skills">Skills</p>
     </div>
     <div class="menu_item scale-down-center" onclick=window.open("contact.html",'_self')><p id="p_contact">Contact</p></div>
-    <div class="menu_item scale-down-center" onclick=window.open("projects.html",'_self')><p id="p_projects">Projects</p></div>
+    <div class="menu_item scale-down-center" onclick=window.open("projects.html",'_self')>
+        <p style="background-color: var(--third);" id="p_projects">Projects</p></div>
 </div>
 
-
-
-<!--============================
-SKILLS BOX
-=================================-->
-<!--<div id="main_skills_box">
-    <div class="skills_box ">
-        <img id="skill_img_1" onmouseover="changeImg(this)" onmouseout="changeImgBack(this)" class="scale-up-center swing-in-top-fwd_1 "
-             src="https://www.bryntum.com/wp-content/uploads/2020/02/js-logo.png"/>
-        <img class="swing-in-top-fwd_2 "
-             src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png"/>
-        <img class="swing-in-top-fwd_3"
-             src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/CSS.3.svg/1200px-CSS.3.svg.png"/>
-        <img class="swing-in-top-fwd_4" src="https://cdn.worldvectorlogo.com/logos/c.svg"/>
-        <img class="swing-in-top-fwd_5" src="https://cdn.iconscout.com/icon/free/png-256/c-programming-569564.png"/>
-    </div>
-    <div class="skills_box">
-        <img class="swing-in-top-fwd_6" src="https://avatars.githubusercontent.com/u/874086?s=400&v=4"/>
-        <img class="swing-in-top-fwd_7"
-             src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1024px-Python-logo-notext.svg.png"/>
-        <img class="swing-in-top-fwd_7" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/240px-Angular_full_color_logo.svg.png
-"/>
-
-    </div>
-</div>-->
-
 <!--
-<div  class="body_box slide-in-left" id="about_me_box">
-    <div class="background_box_center" id="about_me_box_inside">
-        <h2>Hi (-:</h2>
-        <h3>My name is <span id="mini_tamar_animation" >Tamar Giladi</span>, and I am a Computer Science Student.</h3>
-        <p>The Moon is a barren, rocky world without air and water. It has dark lava plain on its surface.
-            The Moon is filled wit craters. It has no light of its own. It gets its light from the Sun. The Moo keeps
-            changing its shape as it moves round the Earth. It spins on its axis in 27.3 days stars were named after
-            the Edwin Aldrin were the first ones to set their foot on the Moon on 21 July 1969 They reached the Moon
-
-            in their space craft named Apollo II.</p>
-        <span style="width:100%;"></span>
-    </div>
-    <img src="images/profile_img.JPG"/>
-</div>-->
-
-<!--<div class="body_box slide-in-left" id="contact_box">
-    <div class="background_box_center">
-        <h3>050<span style="color:var(--main);">8643610</span></h3>
-        <h3><span style="color:var(--main);">tamargi98</span>@gmail.com</h3>
-        <h3><span style="color:var(--main);">LinkedIn        </span><span  style="background-color: #29bb89;padding-left:7px;padding-right:7px;margin-left:3px;"><a target="_blank" href="https://www.linkedin.com/in/tamar-giladi98">Tamar Giladi</a></span></h3>
-        <h3><span style="color:var(--main);">Instagram       </span>@tamar_giladi1</h3>
-        <h3><span style="color:var(--main);">Facebook        </span><span style="background-color: #29bb89;padding-left:7px;padding-right:7px;margin-left:3px;">Tamar Giladi</span></h3>
-
-    </div>
-</div>-->
-
-
+==============================
+    PROJECTS_BOX
+==============================
+-->
 <div class="body_box slide-in-left" id="projects_box">
     <div class="projects_box_inside">
         <div class="projects_block" id="block1">
@@ -107,16 +65,19 @@ SKILLS BOX
         <div id="block2A">
             <h2>To Do App</h2>
             <div class="projects_block_inside">
-                <p>With this robot it's possible to <STRONG>water the garden automatically</STRONG>. The watering is
-                    influenced by weather and temperature conditions. The robot is from <italic>Arudino</italic> type. And the programming language that was used is C.
+                <img id="agile_img" src="images/agile_todo.png"/>
+                <p style="padding:40px;">
+                    Team collaboration tool to manage short and long term work plans for agile projects in the software development industry.
+                    Creating and maintaining work items allowing each team member to track progress, manage priorities and communicate delivery risks on time.
+
                 </p>
             </div>
         </div>
         <div class="seperator_vert"></div>
-        <div id="block2B">
-            <h2>JavaScript Clock</h2>
+        <div style="background-color: #023e57;" id="block2B">
+            <h2 style="text-align: center;"><a href="https://codepen.io/tmrgldy/pen/JjbMxPz" target="_blank" >JavaScript Clock</a></h2>
             <div class="projects_block_inside">
-
+                <img id="clock_img" src="images/img_tmr_clock.png"/>
             </div>
         </div>
     </div>

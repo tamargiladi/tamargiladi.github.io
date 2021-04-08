@@ -394,21 +394,40 @@ a{
 
 }
 
+#contact_box
+{
+    display: grid;
+    color:white;
+    background-color: var(--dark);
+    justify-content: center;
+    text-align: center;
+    width:60%;
+    margin-left: 20%;
+    height:400px;
+
+
+}
+
+
+
 
 #contact_box a
 {
-    background-color: var(--main); !important;
-    color:white;
-    text-decoration: none;
+
 
 }
 #contact_box a:hover
 {
    font-size:104%;
-    padding:4px;
+
 
 }
+#contact_box img:hover
+{
+    width:25px;
 
+
+}
 
 .background_box_center
 {
@@ -427,17 +446,43 @@ a{
 
 }
 
+#about_me_box img
+{
+    width:20%;
+
+}
+
 #about_me_box_inside
 {
     width:80%;
     height:380px;
 
+
 }
 
-#about_me_box img
+
+#link_img
 {
-    height:400px;
+    width:20px;
 }
+
+
+@media screen and (max-width : 390px)
+{
+    #about_me_box_inside p
+    {
+        font-size:100px;
+    }
+}
+@media screen and (max-width : 1204px)
+{
+    #about_me_box_inside p
+    {
+        font-size:100%;
+    }
+}
+
+
 
 #about_me_box_inside h3
 {
@@ -453,6 +498,14 @@ a{
     text-align: left;
 
 }
+
+#clock_img
+{
+  width:100%;
+}
+
+
+
 
 #about_me_box p:hover
 {
@@ -497,6 +550,21 @@ a{
     flex-direction: column;
 
 
+}
+
+@media screen and (max-width : 320px)
+{
+    #projects_box p
+    {
+        font-size:120%;
+    }
+}
+@media screen and (max-width : 1204px)
+{
+    #projects_box p
+    {
+        font-size:100%;
+    }
 }
 
 
@@ -575,12 +643,13 @@ a{
 #block2A
 {
     background-color: #023e57;
-    width:60%;
+    width:70%;
 
 }
 
 #block2B
 {
+    width:30%;
 }
 
 #block3
@@ -589,6 +658,12 @@ a{
 
 }
 
+#agile_img
+{
+    margin-left:20px;
+    margin-bottom: 20px;
+    width:60%;
+}
 
 .projects_block h2
 {
