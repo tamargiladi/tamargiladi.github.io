@@ -450,8 +450,8 @@ a{
 
 #about_me_box img
 {
-
     height:400px;
+    display: block;
 }
 
 #about_me_box_inside
