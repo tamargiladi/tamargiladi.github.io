@@ -442,6 +442,7 @@ a{
 #about_me_box
 {
     display:flex;
+    flex-direction: row;
     justify-content: center;
 
 }
