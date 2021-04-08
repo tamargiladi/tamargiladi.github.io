@@ -550,6 +550,7 @@ a{
     flex-direction: column;
 
 
+
 }
 
 @media screen and (max-width : 320px)
@@ -625,6 +626,7 @@ a{
 #block2
 {
     display:flex;
+    flex-direction: row;
 
 }
 
@@ -632,6 +634,7 @@ a{
 {
     display: flex;
     flex-direction: row;
+    height:350px;
 }
 
 #block2 .projects_block_inside h2
@@ -644,6 +647,7 @@ a{
 {
     background-color: #023e57;
     width:70%;
+
 
 }
 
@@ -678,6 +682,7 @@ a{
 .projects_block_inside
 {
     display:flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
