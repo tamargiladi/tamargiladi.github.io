@@ -443,17 +443,18 @@ a{
 #about_me_box
 {
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 }
 #about_me_box_inside
 {
+    background-color: #03506f;
 
 }
 #p_box_about_me
 {
     background-color: #03506f;
-    height:380px;
+
 
 }
 #about_me_box img
@@ -467,6 +468,10 @@ a{
     margin-top:20px;
     font-size: 20px;
     width:80%;
+    background-color:#03506f ;
+    margin-left:80px;
+    text-align: left;
+    min-width:80%;
 
 }
 
@@ -478,13 +483,7 @@ a{
 }
 
 
-#about_me_box p
-{
-    margin-top: -20px;
-    margin-left:80px;
-    text-align: left;
 
-}
 
 #link_img
 {
